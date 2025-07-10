@@ -1,0 +1,28 @@
+{
+  "name": "AI Research Assistant",
+  "description": "Smart AI-powered research assistant with text summarization and note-taking capabilities",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "sidePanel"
+  ],
+  "action": {
+    "default_title": "AI Research Assistant"
+  },
+  "side_panel": {
+    "default_path": "side_panel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://localhost:8080/*",
+    "<all_urls>"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
