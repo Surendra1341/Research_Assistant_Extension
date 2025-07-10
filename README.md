@@ -80,48 +80,7 @@ Content-Type: application/json
 }
 ```
 
-### Sample Spring Boot Backend Implementation
-```java
-@RestController
-@RequestMapping("/api/research")
-@CrossOrigin(origins = "*")
-public class ResearchController {
 
-    @PostMapping("/process")
-    public ResponseEntity<String> processResearch(@RequestBody Map<String, Object> request) {
-        try {
-            String content = (String) request.get("content");
-            String operation = (String) request.get("operation");
-            
-            // Call your Ollama integration service
-            String summary = ollamaService.summarizeText(content);
-            
-            return ResponseEntity.ok(summary);
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body("Error processing request: " + e.getMessage());
-        }
-    }
-}
-```
-
-### Configuration
-Make sure your Spring Boot application has CORS enabled for the Chrome extension:
-
-```java
-@Configuration
-@EnableWebMvc
-public class WebConfig implements WebMvcConfigurer {
-
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**")
-                .allowedOrigins("*")
-                .allowedMethods("GET", "POST", "PUT", "DELETE")
-                .allowedHeaders("*");
-    }
-}
-```
 
 ## 📁 Project Structure
 
