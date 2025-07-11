@@ -1,10 +1,6 @@
 # 🧠 AI Research Assistant Chrome Extension
 
-A beautiful, modern Chrome extension that helps you summarize text using AI (Ollama backend) and take research notes while browsing the web.
-
-![Extension Preview](https://img.shields.io/badge/Chrome-Extension-brightgreen)
-![Version](https://img.shields.io/badge/version-1.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+A Chrome extension that helps you summarize text using AI (Ollama backend) and take research notes while browsing the web.
 
 ## ✨ Features
 
@@ -18,28 +14,18 @@ A beautiful, modern Chrome extension that helps you summarize text using AI (Oll
 - **Built-in notepad** for collecting insights
 - **Auto-save functionality** - notes saved as you type
 - **Persistent storage** across browser sessions
-- **Clear and manage** notes easily
 
 ### 🎨 Modern Design
 - **Glassmorphism UI** with gradient backgrounds
 - **Smooth animations** and hover effects
-- **Professional iconography** using SVG icons
 - **Responsive design** that works on all screen sizes
 - **Status indicators** showing backend connectivity
-
-### 🔧 Smart Features
-- **Backend connectivity monitoring** - shows online/offline status
-- **Current page tracking** - displays active tab information
-- **Error handling** with user-friendly notifications
-- **Toast notifications** for all actions
-- **Loading states** for better user experience
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Chrome browser
 - Spring Boot backend running locally (for AI summarization)
-- Basic knowledge of Chrome extensions
 
 ### Installation
 
@@ -80,8 +66,6 @@ Content-Type: application/json
 }
 ```
 
-
-
 ## 📁 Project Structure
 
 ```
@@ -93,25 +77,6 @@ Research_Assistant_Extension/
 ├── side_panel.js          # Core functionality and API calls
 └── README.md              # This file
 ```
-
-## 🎨 Screenshots
-
-### Main Interface
-The extension opens as a side panel with a modern, glassmorphism design:
-- Gradient background
-- Real-time status indicators
-- Clean, intuitive layout
-
-### Summarization in Action
-1. Select text on any webpage
-2. Click "Summarize Selection"
-3. Get AI-powered summaries instantly
-4. Copy results to clipboard or notes
-
-### Notes Management
-- Auto-saving research notes
-- Clear and organized interface
-- Persistent storage
 
 ## 🔧 Configuration
 
@@ -154,7 +119,6 @@ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 - Select text before clicking summarize
 - Check if text selection is too long (5000 char limit)
 - Verify backend is responding to requests
-- Check Spring Boot application logs for errors
 
 **Notes not saving:**
 - Check browser storage permissions
@@ -182,15 +146,7 @@ The codebase is modular and well-documented. Key areas:
 - **Background tasks**: Extend `background.js`
 - **Permissions**: Update `manifest.json`
 
-### Code Style
-- Use ES6+ features
-- Follow async/await patterns
-- Add error handling for all API calls
-- Keep functions modular and documented
-
 ## 🤝 Contributing
-
-Contributions are welcome! Please:
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -198,65 +154,10 @@ Contributions are welcome! Please:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-### Areas for Contribution
-- [ ] Multiple AI model support
-- [ ] Export notes to different formats
-- [ ] Search within notes
-- [ ] Tags and categories for notes
-- [ ] Dark/light theme toggle
-- [ ] Keyboard shortcuts
-- [ ] Multi-language support
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙋‍♂️ Support
-
-If you encounter any issues or have questions:
-
-1. **Check the troubleshooting section** above
-2. **Open an issue** on GitHub with:
-   - Description of the problem
-   - Steps to reproduce
-   - Chrome version
-   - Error messages (if any)
-
-## 🌟 Acknowledgments
-
-- Built with modern web technologies
-- Uses Spring Boot for robust backend architecture
-- Integrates Ollama for AI capabilities
-- Inspired by the need for better research tools
-- Thanks to the open-source community
-
-## 📈 Roadmap
-
-### v1.1 (Planned)
-- [ ] Multiple AI model selection
-- [ ] Export notes functionality
-- [ ] Search within notes
-- [ ] Performance improvements
-
-### v1.2 (Future)
-- [ ] Dark/light theme toggle
-- [ ] Keyboard shortcuts
-- [ ] Note categories and tags
-- [ ] Cloud sync for notes
-
 ---
 
-**Made with ❤️ by [Surendra](https://github.com/Surendra1341)**
-
-**⭐ Star this repository if you find it helpful!**
-
----
-
-## 📞 Connect
-
-- **GitHub**: [@Surendra1341](https://github.com/Surendra1341)
-- **Issues**: [Report bugs or request features](https://github.com/Surendra1341/Research_Assistant_Extension/issues)
-
----
-
-*Happy researching! 🔍📚*
+**Extension developed by our team and friends**
